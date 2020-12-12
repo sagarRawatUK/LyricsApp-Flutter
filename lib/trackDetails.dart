@@ -51,7 +51,7 @@ class _TrackDetailsState extends State<TrackDetails> {
     final response = await http.get(
         "https://api.musixmatch.com/ws/1.1/track.get?track_id=" +
             track_id.toString() +
-            "&apikey=7f26739f2c4292580cafca27a0524760");
+            "&apikey=API_KEY");
 
     if (response.statusCode == 200) {
       setState(() {
@@ -68,7 +68,7 @@ class _TrackDetailsState extends State<TrackDetails> {
     final response = await http.get(
         "https://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id=" +
             track_id.toString() +
-            "&apikey=7f26739f2c4292580cafca27a0524760");
+            "&apikey=API_KEY");
 
     if (response.statusCode == 200) {
       setState(() {
