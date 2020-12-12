@@ -57,8 +57,6 @@ class _TracksState extends State<Tracks> {
   dispose() {
     subscription.cancel();
     super.dispose();
-
-    subscription.cancel();
   }
 
   Future fetchAlbum() async {
@@ -131,6 +129,6 @@ class _TracksState extends State<Tracks> {
                       );
                     },
                   )
-            : Center(child: Text("No Interne Connection")));
+            : Center(child: Text("No Internet Connection")));
   }
 }
